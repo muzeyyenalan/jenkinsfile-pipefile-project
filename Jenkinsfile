@@ -1,5 +1,4 @@
 
-```text
 pipeline {
     agent any
     stages {

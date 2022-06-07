@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo "Clarusway_Way to Reinvent Muzeyyen"
                 sh 'python --version'
-                ah 'git version'
+                sh 'git version'
                 sh 'python pipeline.py'
             }
         }

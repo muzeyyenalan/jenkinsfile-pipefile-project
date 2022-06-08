@@ -3,10 +3,14 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "Clarusway_Way to Reinvent Muzeyyen"
-                sh 'python --version'
-                sh 'git version'
-                sh 'python pipeline.py'
+                echo 'Compiling the java source code'
+                sh 'javac Hello.java'
+            }
+        }
+        stage('run') {
+            steps {
+                echo 'Running the compiled java code.'
+                sh 'java Hello'
             }
         }
     }

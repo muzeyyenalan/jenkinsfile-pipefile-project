@@ -1,2 +1,1 @@
-print ("first job")
-print ("selamlar")
+print ("'My first python job which is run within Jenkinsfile.'")
